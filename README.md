@@ -18,5 +18,7 @@ Memory B also has operation modes: write mode and read mode, which is controlled
 ![controller](https://user-images.githubusercontent.com/27938420/43807243-66a4d372-9a5c-11e8-8bc0-d25fa591cfaa.png)
 we can get what should IncA, IncB, WEA, and WEB behave as clocks goes by. The following figure shows an implementation by Moore machine.
 ![fig2-47](https://user-images.githubusercontent.com/27938420/43807276-8e8c0b94-9a5c-11e8-91de-61c2b2c0890c.png)
+### Test
+The test module forms the other four modules, Reset, clock and DataInA. We select the clock as 200ps. We set Reset is 1 as an initial value, after 80ps, make Reset 0. And also initialize DataInA 8 bits all zeros. Every time wait 200ps, DataInA increase 1, until 8 times. 
 ## Target Output
 ![output](https://user-images.githubusercontent.com/27938420/43807319-c04f76c0-9a5c-11e8-9469-d58dfa6a74bc.png)
